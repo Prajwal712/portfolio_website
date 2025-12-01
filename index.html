@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Prajwal Pathade - Web Developer & Designer">
+    <title>Prajwal Pathade | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+    <canvas id="bg-canvas"></canvas>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Prajwal Pathade</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hello, I'm <span class="highlight">Prajwal Pathade</span></h1>
+                <p class="hero-education">Computer Science Engineering @ IIT Jodhpur</p>
+                <p class="hero-subtitle">Creative Web Developer & Designer</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/prajwal-pathade-46a599315" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Prajwal712" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/u/Prajwal_Pathade7/" target="_blank" aria-label="LeetCode"><i
+                            class="fas fa-laptop-code"></i></a>
+                    <a href="https://codeforces.com/profile/prajwal7" target="_blank" aria-label="Codeforces"><i
+                            class="fas fa-chart-simple"></i></a>
+                    <a href="https://www.instagram.com/prajwal_pathade_/" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <!-- Placeholder for user image, using a gradient div for now -->
+                <div class="hero-image-placeholder"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate developer with a knack for creating beautiful and functional websites. I love
+                        turning ideas into reality through code. With a strong foundation in modern web technologies, I
+                        strive to build user-centric experiences that leave a lasting impression.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, designing user interfaces, or
+                        enjoying a good cup of coffee.</p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Quant_Crypt_SIH</h3>
+                        <p>MailQ: A proof-of-concept desktop email client that integrates Quantum Key Distribution (QKD)
+                            for ultra-secure, post-quantum communication.</p>
+                        <h4 class="features-label">Features</h4>
+                        <ul class="project-features">
+                            <li>QKD Integration for secure keys</li>
+                            <li>Post-quantum cryptography</li>
+                            <li>Desktop email client interface</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="btn-sm">Demo</a>
+                            <a href="https://github.com/Prajwal712/Quant_Crypt_SIH" target="_blank"
+                                class="btn-sm btn-outline-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Quantum Cryptography</span>
+                            <span class="tech-badge">AES</span>
+                            <span class="tech-badge">QKD</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Fast_NN_Search</h3>
+                        <p>Comparing different algorithms for nearest neighbour search of 2-Dimensional points.
+                            Implemented in C for performance.</p>
+                        <h4 class="features-label">Features</h4>
+                        <ul class="project-features">
+                            <li>Algorithm comparison & analysis</li>
+                            <li>Optimized C implementation</li>
+                            <li>Efficient 2D point search</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="btn-sm">Demo</a>
+                            <a href="https://github.com/Prajwal712/Fast_NN_Search" target="_blank"
+                                class="btn-sm btn-outline-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">C</span>
+                            <span class="tech-badge">Algorithms</span>
+                            <span class="tech-badge">Nearest Neighbor</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>File Manager Tool</h3>
+                        <p>A command-line File Management Tool built in C. Handles file operations efficiently.</p>
+                        <h4 class="features-label">Features</h4>
+                        <ul class="project-features">
+                            <li>File sorting by extension</li>
+                            <li>Duplicate file handling</li>
+                            <li>Revert operations support</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Prajwal712/file_manager_tool" target="_blank"
+                                class="btn-sm btn-outline-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">C</span>
+                            <span class="tech-badge">File Systems</span>
+                            <span class="tech-badge">CLI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Have a project in mind? Let's work together.</p>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <a href="mailto:b24cs1055@iitj.ac.in" class="contact-item interactive">
+                        <i class="fas fa-envelope"></i>
+                        <p>b24cs1055@iitj.ac.in</p>
+                    </a>
+                    <div class="contact-item interactive" id="phone-contact" data-number="+91 9049555518"
+                        title="Click to copy">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 9049555518</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>SambhajiNagar , Maharashtra , India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Prajwal Pathade. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
