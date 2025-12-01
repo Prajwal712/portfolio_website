@@ -54,9 +54,7 @@ portfolio_website/
 
 ## 📬 Contact
 
-- **Email**: prajwal@example.com
+- **Email**: b24cs1055@iitj.ac.in
 - **LinkedIn**: [Prajwal Pathade](https://linkedin.com)
-- **GitHub**: [Prajwal712](https://github.com/Prajwal712)
-
 ---
 &copy; 2024 Prajwal Pathade. All rights reserved.
