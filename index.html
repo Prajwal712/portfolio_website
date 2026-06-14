@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Prajwal Pathade - Web Developer & Designer">
+    <meta name="description" content="Portfolio of Prajwal Pathade - Software Engineer & Systems Enthusiast">
     <title>Prajwal Pathade | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,14 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 class="loader-title">PRAJWAL PATHADE</h1>
+            <div class="loader-line-mask"><div class="loader-line"></div></div>
+        </div>
+    </div>
+
     <div class="cursor-glow"></div>
     <canvas id="bg-canvas"></canvas>
     <nav class="navbar">
@@ -38,7 +46,7 @@
             <div class="hero-content">
                 <h1 class="hero-title">Hello, I'm <span class="highlight">Prajwal Pathade</span></h1>
                 <p class="hero-education">Computer Science Engineering @ IIT Jodhpur</p>
-                <p class="hero-subtitle">Creative Web Developer & Designer</p>
+                <p class="hero-subtitle">Software Engineer & Systems Enthusiast</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
@@ -56,10 +64,7 @@
                             class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="hero-image-wrapper">
-                <!-- Placeholder for user image, using a gradient div for now -->
-                <img src="assets/profile.png" alt="Prajwal Pathade" class="hero-image">
-            </div>
+
         </div>
     </header>
 
@@ -68,23 +73,49 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am a Computer Science Engineering student at IIT Jodhpur with a strong passion for software
-                        development.
-                    </p>
-                    <p>My interests range from low-level systems programming in C to exploring advanced
-                        concepts like Quantum Cryptography.
-
-                        I enjoy building efficient tools and solving complex
-                        algorithmic challenges.I'm exploring new technologies and working on
-                        innovative projects.</p>
+                    <h3 class="about-subtitle">CSE Undergraduate @ IIT Jodhpur | Open Source Contributor | ML & Cryptography Enthusiast</h3>
+                    <p class="about-intro">I am a passionate software engineer and problem solver currently pursuing my B.Tech in Computer Science and Engineering at IIT Jodhpur. I specialize in developing efficient, scalable systems and have a strong foundation in Data Structures, Algorithms, and Machine Learning.</p>
+                    <p class="about-intro">Beyond academics, I am an active competitive programmer and an Undergraduate Student Researcher at the 3D VisLab (IIT Jodhpur), where I work on 3D garment draping and interactive posture assessment using SMPL-X models in Unity. I am also an active open-source contributor to SymPy, optimizing critical mathematical algorithms.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🚀</span>
+                            <div class="highlight-info">
+                                <h4>Open Source Contributor</h4>
+                                <p>Actively contributing to SymPy by optimizing matrix inversion algorithms and authoring regression tests.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🤖</span>
+                            <div class="highlight-info">
+                                <h4>Machine Learning & Research</h4>
+                                <p>Experience in deep learning forecasting (AISE) and 3D computer vision research at IIT Jodhpur's 3D VisLab.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🔐</span>
+                            <div class="highlight-info">
+                                <h4>Cryptography</h4>
+                                <p>Developer of "QuMail," integrating Post-Quantum Cryptography (PQC) and QKD for secure communication.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">⚡</span>
+                            <div class="highlight-info">
+                                <h4>Competitive Programming</h4>
+                                <p>AlgoUniversity Fellowship Stage 2 Qualifier (Top 8%) and active on Codeforces & LeetCode.</p>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="skills">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Cryptography</span>
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">SDL2</span>
                     </div>
                 </div>
             </div>
@@ -95,28 +126,50 @@
         <div class="container">
             <h2 class="section-title">My Projects</h2>
             <div class="projects-grid">
+                <!-- Project Card: AISE-Pollution -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>AISE-Pollution</h3>
+                        <p>Deep learning pipeline forecasting hourly PM2.5 concentrations across a spatial grid using a data-driven approach based on WRF-Chem simulation data.</p>
+                        <h4 class="features-label">Key Highlights</h4>
+                        <ul class="project-features">
+                            <li>Custom Wavelet Neural Operator (WNO) architecture.</li>
+                            <li>Delta-prediction strategy with physics-informed loss function.</li>
+                            <li>Domain-aware feature engineering (ventilation coeff, rain mask).</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/tahseenparray1/AISE-Pollution" target="_blank"
+                                class="btn-sm btn-outline-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">PyTorch</span>
+                            <span class="tech-badge">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
                 <!-- Project Card 1 -->
                 <div class="project-card">
                     <div class="project-info">
-                        <h3>Quant_Crypt_SIH</h3>
-                        <p>MailQ: A proof-of-concept desktop email client that integrates Quantum Key Distribution (QKD)
-                            for ultra-secure, post-quantum communication.</p>
-                        <h4 class="features-label">Features</h4>
+                        <h3>QuMail (SIH 2025)</h3>
+                        <p>A secure email client prototype featuring 4-level security options for customizable protection.</p>
+                        <h4 class="features-label">Key Highlights</h4>
                         <ul class="project-features">
-                            <li>QKD Integration for secure keys</li>
-                            <li>Post-quantum cryptography</li>
-                            <li>Desktop email client interface</li>
+                            <li>Hybrid backend combining PQC (Kyber) and QKD.</li>
+                            <li>Integration with Gmail API via OAuth2 (SMTP, IMAP).</li>
+                            <li>Advanced encryption layer for future-proof communication.</li>
                         </ul>
                         <div class="project-links">
-                            <a href="https://youtu.be/mxG2GqLsvGM" target="_blank" class="btn-sm">Demo</a>
+                            <a href="https://quant-crypt-sih.vercel.app/" target="_blank" class="btn-sm">Live Demo</a>
+                            <a href="https://youtu.be/mxG2GqLsvGM" target="_blank" class="btn-sm">Video</a>
                             <a href="https://github.com/Prajwal712/Quant_Crypt_SIH" target="_blank"
                                 class="btn-sm btn-outline-sm"><i class="fab fa-github"></i> Code</a>
                         </div>
                         <div class="tech-stack">
                             <span class="tech-badge">Python</span>
-                            <span class="tech-badge">Quantum Cryptography</span>
-                            <span class="tech-badge">AES</span>
-                            <span class="tech-badge">QKD</span>
+                            <span class="tech-badge">PQC (Kyber)</span>
+                            <span class="tech-badge">Qt (PySide6)</span>
+                            <span class="tech-badge">Gmail API</span>
                         </div>
                     </div>
                 </div>
@@ -124,13 +177,12 @@
                 <div class="project-card">
                     <div class="project-info">
                         <h3>Fast_NN_Search</h3>
-                        <p>Comparing different algorithms for nearest neighbour search of 2-Dimensional points.
-                            Implemented in C for performance.</p>
-                        <h4 class="features-label">Features</h4>
+                        <p>Designed and implemented three Nearest Neighbor search approaches with real-time query execution GUI.</p>
+                        <h4 class="features-label">Key Highlights</h4>
                         <ul class="project-features">
-                            <li>Algorithm comparison & analysis</li>
-                            <li>Optimized C implementation</li>
-                            <li>Efficient 2D point search</li>
+                            <li>k-d tree, quadtree, and array-based linear search implementations.</li>
+                            <li>Interactive GUI using SDL2 for visualization.</li>
+                            <li>Achieved 10x speedup using k-d trees for datasets >1,00,000 points.</li>
                         </ul>
                         <div class="project-links">
                             <a href="https://youtu.be/HUJq90Hpbcc" target="_blank" class="btn-sm">Demo</a>
@@ -138,31 +190,50 @@
                                 class="btn-sm btn-outline-sm"><i class="fab fa-github"></i> Code</a>
                         </div>
                         <div class="tech-stack">
-                            <span class="tech-badge">C</span>
-                            <span class="tech-badge">Algorithms</span>
-                            <span class="tech-badge">Nearest Neighbor</span>
+                            <span class="tech-badge">C++</span>
+                            <span class="tech-badge">SDL2</span>
+                            <span class="tech-badge">Data Structures</span>
                         </div>
                     </div>
                 </div>
-                <!-- Project Card 3 -->
+                <!-- Project Card: AIGram -->
                 <div class="project-card">
                     <div class="project-info">
-                        <h3>File Manager Tool</h3>
-                        <p>A command-line File Management Tool built in C. Handles file operations efficiently.</p>
-                        <h4 class="features-label">Features</h4>
+                        <h3>AIGram (AI Instagram Bot)</h3>
+                        <p>Fully automated AI-powered Instagram content creation and publishing pipeline.</p>
+                        <h4 class="features-label">Key Highlights</h4>
                         <ul class="project-features">
-                            <li>File sorting by extension</li>
-                            <li>Duplicate file handling</li>
-                            <li>Revert operations support</li>
+                            <li>AI Prompt Engineering & Content Verification with Gemini 2.5 Flash & Vision.</li>
+                            <li>High-quality image generation via Pollinations AI.</li>
+                            <li>Automated one-click publishing via Instagram Graph API.</li>
                         </ul>
                         <div class="project-links">
-                            <a href="https://github.com/Prajwal712/file_manager_tool" target="_blank"
+                            <a href="https://github.com/Prajwal712/AIGram" target="_blank"
                                 class="btn-sm btn-outline-sm"><i class="fab fa-github"></i> Code</a>
                         </div>
                         <div class="tech-stack">
-                            <span class="tech-badge">C</span>
-                            <span class="tech-badge">File Systems</span>
-                            <span class="tech-badge">CLI</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Gemini API</span>
+                            <span class="tech-badge">Instagram API</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card: OTAKU AI DOJO -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>OTAKU AI DŌJŌ</h3>
+                        <p>Developed a computer vision pipeline for a 24-hour Kaggle hackathon to classify 630 unique anime characters.</p>
+                        <h4 class="features-label">Key Highlights</h4>
+                        <ul class="project-features">
+                            <li>Implemented and ensembled state-of-the-art vision models (ConvNeXt, Swin Transformer).</li>
+                            <li>Handled large-scale multi-class classification and transfer learning.</li>
+                            <li>Achieved a competitive macro F1 score (0.748) under strict 24-hour time constraints.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">PyTorch</span>
+                            <span class="tech-badge">Computer Vision</span>
+                            <span class="tech-badge">ConvNeXt</span>
                         </div>
                     </div>
                 </div>

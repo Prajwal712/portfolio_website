@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Preloader
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const preloader = document.getElementById('preloader');
+            if(preloader) {
+                preloader.classList.add('loaded');
+                document.body.classList.add('loaded');
+            }
+        }, 2500); // 2.5 second delay to let animation finish
+    });
+
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
